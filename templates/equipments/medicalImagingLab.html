@@ -1,0 +1,338 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta name="description" content="ML-TOOLBOX" />
+    <meta property="og:title" content="ML-TOOLBOX" />
+    <meta property="og:description" content="ML-TOOLBOX" />
+    <meta property="og:image" content="" />
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="{%static 'images/favicon.ico'%}" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'images/favicon.png'%}" />
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <!-- PAGE TITLE HERE -->
+    <!-- here heading will come -->
+    <title></title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="{%static 'css/plugins.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/style.min.css'%}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{%static 'css/skin/skin-5.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/templete.min.css'%}">
+    <!-- Google Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+    </style>
+
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="{%static 'plugins/revolution/revolution/css/revolution.min.css'%}">
+
+    <!-- here css will come -->
+</head>
+
+<body id="bg">
+    <div class="page-wraper">
+        <div id="loading-area"></div>
+
+        <!-- header -->
+        <header class="site-header mo-left header navstyle1">
+            <!-- main header -->
+            <div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
+                <div class="main-bar clearfix bg-primary">
+                    <div class="container clearfix">
+                        <!-- website logo -->
+                        <div class="logo-header mostion logo-dark">
+                            <a href="{%url 'home'%}"><img src="{%static 'images/logo.png'%}" alt=""></a>
+                        </div>
+                        <!-- nav toggle button -->
+                        <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
+                            data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <!-- main nav -->
+                        <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+                            <div class="logo-header d-md-block d-lg-none">
+                                <a href="{%url 'home'%}"><img src="{%static 'images/logo.png'%}" alt=""></a>
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="{%url 'home'%}">Home</a>
+                                <li>
+                                    <a href="javascript:;">Labs<i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu right">
+                                        <li><a href="{%url 'communicationLab'%}">Communication Lab</a></li>
+                                        <li><a href="{%url 'microwaveLab'%}">Microwave Lab</a></li>
+                                        <li><a href="{%url 'devicesLab'%}">Devices Lab</a></li>
+                                        <li><a href="{%url 'vlsiLab'%}">VLSI Lab</a></li>
+                                        <li><a href="{%url 'bioMedicalLab'%}">Bio-Medical Signal Processing Lab</a></li>
+                                        <li><a href="{%url 'medicalImagingLab'%}">Medical Imaging And Computational
+                                                Modelling Of Physiological Sytem Lab</a></li>
+                                        <li><a href="{%url 'embeddedLab'%}">Embedded Lab</a></li>
+                                        <li><a href="{%url 'emergingLab'%}">Emerging Technology Lab</a></li>
+                                        <li><a href="{%url 'BECLab'%}">Basic Electronics Lab</a></li>
+                                        <li><a href="{%url 'DSPLab'%}">Digital Signal Processing Lab</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main header END -->
+        </header>
+        <!-- header -->
+
+        <div class="section-full content-inner bg-white">
+            <div class="page-content bg-white">
+                <!-- inner page banner -->
+                <div class="dlab-bnr-inr overlay-black-middle bg-pt"
+                    style="background-image:url(/static/images/eceBuilding.jpg);">
+                    <div class="container">
+                        <div class="dlab-bnr-inr-entry">
+                            <h1 class="text-white">Medical Imaging & Computational Modelling of Physiological Systems Lab</h1>
+                            <!-- Breadcrumb row -->
+                            <div class="breadcrumb-row">
+                                <ul class="list-inline">
+                                    <li><a href="{%url 'home'%}">Home</a></li>
+                                    <li>Medical Imaging & Computational Modelling of Physiological Systems Lab</li>
+                                </ul>
+                            </div>
+                            <!-- Breadcrumb row END -->
+                        </div>
+                    </div>
+                </div>
+                <!-- inner page banner END -->
+                <!-- contact area -->
+                <div class="content-area">
+                    <div class="container max-w900">
+                        <!-- blog start -->
+                        <div class="blog-post blog-single">
+                            <div class="dlab-post-media dlab-img-effect zoom-slow">
+                                <a href="javascript:void(0);"><img src="/static/images/micr.png" alt=""></a>
+                            </div>
+                            <div class="dlab-post-text">
+                                <div class="dlab-divider bg-gray-dark"></div>
+
+                                <h5> Biopac MP-150,16-channel Data Acquistion Analysis System</h5>
+                                <img class="alignleft" width="300" src="/static/images/bm1.png" alt="">
+                                <p>MP150 data acquisition and analysis systems with AcqKnowledge software provide a
+                                    flexible tool for life science
+                                    research. All systems are compliant with any Ethernet (UDP) ready computer running
+                                    Windows or Mac. Record
+                                    multiple data channels with variable sample rates to maximize storage efficiency at
+                                    speeds up to 400 kHz
+                                    (aggregate). Directly connect the computer to a single MP150 unit via the provided
+                                    ETHUSB Ethernet adapter, or
+                                    access multiple MP150s by connecting a switch box to the adapter.
+                                </p>
+                                 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Content END-->
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="p-tb60 text-center bg-black ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="font-weight-300">MINOR PROJECT</h3>
+                            <div class="dlab-separator bg-white"></div>
+                            <p class="max-w600 m-auto">DEVELOPED BY PRAVEEN KUMAR, PARTH, NITESH KUMAR </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer END -->
+
+        <!-- scroll top button -->
+        <button class="scroltop fa fa-chevron-up"></button>
+    </div>
+    <!-- JAVASCRIPT FILES ========================================= -->
+    <script src="{%static 'js/jquery.min.js'%}"></script>
+    <!-- JQUERY.MIN JS -->
+    <script src="{%static 'plugins/wow/wow.js'%}"></script>
+    <!-- WOW JS -->
+    <script src="{%static 'plugins/bootstrap/js/popper.min.js'%}"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+    <script src="{%static 'plugins/bootstrap/js/bootstrap.min.js'%}"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+    <script src="{%static 'plugins/bootstrap-select/bootstrap-select.min.js'%}"></script>
+    <!-- FORM JS -->
+    <script src="{%static 'plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js'%}"></script>
+    <!-- FORM JS -->
+    <script src="{%static 'plugins/magnific-popup/magnific-popup.js'%}"></script>
+    <!-- MAGNIFIC POPUP JS -->
+    <script src="{%static 'plugins/counter/waypoints-min.js'%}"></script>
+    <!-- WAYPOINTS JS -->
+    <script src="{%static 'plugins/counter/counterup.min.js'%}"></script>
+    <!-- COUNTERUP JS -->
+    <script src="{%static 'plugins/imagesloaded/imagesloaded.js' %}"></script>
+    <!-- IMAGESLOADED -->
+    <script src="{%static 'plugins/masonry/masonry-3.1.4.js' %}"></script>
+    <!-- MASONRY -->
+    <script src="{%static 'plugins/masonry/masonry.filter.js' %}"></script>
+    <!-- MASONRY -->
+    <script src="{%static 'plugins/owl-carousel/owl.carousel.js' %}"></script>
+    <!-- OWL SLIDER -->
+    <script src="{%static 'plugins/lightgallery/js/lightgallery-all.min.js' %}"></script>
+    <!-- Lightgallery -->
+    <script src="{%static 'js/custom.js' %}"></script>
+    <!-- CUSTOM FUCTIONS  -->
+    <script src="{%static 'js/dz.carousel.min.js' %}"></script>
+    <!-- SORTCODE FUCTIONS  -->
+    <script src="{%static 'plugins/countdown/jquery.countdown.js' %}"></script>
+    <!-- COUNTDOWN FUCTIONS  -->
+    <script src="{%static 'js/dz.ajax.js' %}"></script>
+    <!-- CONTACT JS  -->
+    <script src="{%static 'plugins/rangeslider/rangeslider.js' %}"></script>
+    <!-- Rangeslider -->
+
+    <script src="{%static 'js/jquery.lazy.min.js' %}"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script src="{%static 'plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{%static 'plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+    <script src="{%static 'js/rev.slider.js' %}"></script>
+    <script src="{%static 'js/jquery.star-rating-svg.js' %}"></script>
+
+    <script>
+        jQuery(document).ready(function () {
+            'use strict';
+            dz_rev_slider_5();
+            $('.lazy').Lazy();
+        }); /*ready*/
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            var sync1 = $("#sync1");
+            var sync2 = $("#sync2");
+            var slidesPerPage = 4; //globaly define number of elements per page
+            var syncedSecondary = true;
+
+            sync1.owlCarousel({
+                items: 1,
+                slideSpeed: 2000,
+                nav: true,
+                autoplay: false,
+                dots: false,
+                loop: true,
+                responsiveRefreshRate: 200,
+                navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+            }).on('changed.owl.carousel', syncPosition);
+
+            sync2.on('initialized.owl.carousel', function () {
+                sync2.find(".owl-item").eq(0).addClass("current");
+            }).owlCarousel({
+                items: slidesPerPage,
+                dots: false,
+                nav: false,
+                margin: 5,
+                smartSpeed: 200,
+                slideSpeed: 500,
+                slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+                responsiveRefreshRate: 100
+            }).on('changed.owl.carousel', syncPosition2);
+
+            function syncPosition(el) {
+                //if you set loop to false, you have to restore this next line
+                //var current = el.item.index;
+
+                //if you disable loop you have to comment this block
+                var count = el.item.count - 1;
+                var current = Math.round(el.item.index - (el.item.count / 2) - .5);
+
+                if (current < 0) {
+                    current = count;
+                }
+                if (current > count) {
+                    current = 0;
+                }
+
+                //end block
+
+                sync2
+                    .find(".owl-item")
+                    .removeClass("current")
+                    .eq(current)
+                    .addClass("current");
+                var onscreen = sync2.find('.owl-item.active').length - 1;
+                var start = sync2.find('.owl-item.active').first().index();
+                var end = sync2.find('.owl-item.active').last().index();
+
+                if (current > end) {
+                    sync2.data('owl.carousel').to(current, 100, true);
+                }
+                if (current < start) {
+                    sync2.data('owl.carousel').to(current - onscreen, 100, true);
+                }
+            }
+
+            function syncPosition2(el) {
+                if (syncedSecondary) {
+                    var number = el.item.index;
+                    sync1.data('owl.carousel').to(number, 100, true);
+                }
+            }
+
+            sync2.on("click", ".owl-item", function (e) {
+                e.preventDefault();
+                var number = $(this).index();
+                //sync1.data('owl.carousel').to(number, 300, true);
+
+                sync1.data('owl.carousel').to(number, 300, true);
+
+            });
+
+            document.getElementsByClassName("owl-prev")[0].style.display = "none";
+            document.getElementsByClassName("owl-next")[0].style.display = "none";
+        });
+    </script>
+
+
+    {% block script %} {% endblock %}
+</body>
+
+</html>

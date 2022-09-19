@@ -1,0 +1,467 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta name="description" content="ML-TOOLBOX" />
+    <meta property="og:title" content="ML-TOOLBOX" />
+    <meta property="og:description" content="ML-TOOLBOX" />
+    <meta property="og:image" content="" />
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="{%static 'images/favicon.ico'%}" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'images/favicon.png'%}" />
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <!-- PAGE TITLE HERE -->
+    <!-- here heading will come -->
+    <title></title>
+
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="{%static 'css/plugins.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/style.min.css'%}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{%static 'css/skin/skin-5.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/templete.min.css'%}">
+    <!-- Google Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+    </style>
+
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="{%static 'plugins/revolution/revolution/css/revolution.min.css'%}">
+
+    <!-- here css will come -->
+</head>
+
+<body id="bg">
+    <div class="page-wraper">
+        <div id="loading-area"></div>
+
+        <!-- header -->
+        <header class="site-header mo-left header navstyle1">
+            <!-- main header -->
+            <div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
+                <div class="main-bar clearfix bg-primary">
+                    <div class="container clearfix">
+                        <!-- website logo -->
+                        <div class="logo-header mostion logo-dark">
+                            <a href="{%url 'home'%}"><img src="{%static 'images/logo.png'%}" alt=""></a>
+                        </div>
+                        <!-- nav toggle button -->
+                        <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
+                            data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <!-- main nav -->
+                        <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+                            <div class="logo-header d-md-block d-lg-none">
+                                <a href="{%url 'home'%}"><img src="{%static 'images/logo.png'%}" alt=""></a>
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="{%url 'home'%}">Home</a>
+                                <li>
+                                    <a href="javascript:;">Labs<i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu right">
+                                        <li><a href="{%url 'communicationLab'%}">Communication Lab</a></li>
+                                        <li><a href="{%url 'microwaveLab'%}">Microwave Lab</a></li>
+                                        <li><a href="{%url 'devicesLab'%}">Devices Lab</a></li>
+                                        <li><a href="{%url 'vlsiLab'%}">VLSI Lab</a></li>
+                                        <li><a href="{%url 'bioMedicalLab'%}">Bio-Medical Signal Processing Lab</a></li>
+                                        <li><a href="{%url 'medicalImagingLab'%}">Medical Imaging And Computational
+                                                Modelling Of Physiological Sytem Lab</a></li>
+                                        <li><a href="{%url 'embeddedLab'%}">Embedded Lab</a></li>
+                                        <li><a href="{%url 'emergingLab'%}">Emerging Technology Lab</a></li>
+                                        <li><a href="{%url 'BECLab'%}">Basic Electronics Lab</a></li>
+                                        <li><a href="{%url 'DSPLab'%}">Digital Signal Processing Lab</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main header END -->
+        </header>
+        <!-- header -->
+
+        <div class="section-full content-inner bg-white">
+            <div class="page-content bg-white">
+                <!-- inner page banner -->
+                <div class="dlab-bnr-inr overlay-black-middle bg-pt"
+                    style="background-image:url(/static/images/eceBuilding.jpg);">
+                    <div class="container">
+                        <div class="dlab-bnr-inr-entry">
+                            <h1 class="text-white">Microwave LAB</h1>
+                            <!-- Breadcrumb row -->
+                            <div class="breadcrumb-row">
+                                <ul class="list-inline">
+                                    <li><a href="{%url 'home'%}">Home</a></li>
+                                    <li>Microwave Lab</li>
+                                </ul>
+                            </div>
+                            <!-- Breadcrumb row END -->
+                        </div>
+                    </div>
+                </div>
+                <!-- inner page banner END -->
+                <!-- contact area -->
+                <div class="content-area">
+                    <div class="container max-w900">
+                        <!-- blog start -->
+                        <div class="blog-post blog-single">
+                            <div class="dlab-post-media dlab-img-effect zoom-slow">
+                                <a href="javascript:void(0);"><img src="/static/images/microwavejpg.jpg" alt=""></a>
+                            </div>
+                            <div class="dlab-post-text">
+                                <div class="dlab-divider bg-gray-dark"></div>
+
+                                <h5>Spectrum Analyser </h5>
+                                <img class="alignleft" width="300" src="/static/images/mw1.png" alt="">
+                                <p>A general purpose spectrum analyzer is the engineer’s
+                                    most flexible test tool.
+                                    The instrument was designed for fast sweep speeds in
+                                    narrow resolution bandwidths and fast in-channel measurements, as well as the
+                                    highest achievable
+                                    dynamic range in its price class. Remote control via
+                                    100 Base T LAN and SCPI reduce the complexity and time to
+                                    develop automation software, enhance compatibility
+                                    with existing systems, and reduce training time for manufacturing staff. All of
+                                    these attributes are designed
+                                    to reduce cost-of-test, while the excellent reliability assures
+                                    the lowest overall cost of ownership.
+                                    each engineer’s bench!
+                                    You get true Keysight performance with TOI of +18 dBm,
+                                    10 Hz minimum RBW (1 Hz minimum VBW) with 10%
+                                    adjustability, and 1 dB step attenuator. The large, bright,
+                                    21 cm, 1024 x 768 pixel, XGA display (best-in-class),
+                                    convenient form factor, and straightforward portability
+                                    of data with a USB memory device make the Keysight
+                                    CSA spectrum analyzer easy to use.
+                                </p>
+
+                                <div class="dlab-divider bg-gray-dark"></div>
+
+                                <h5>Network analyser N5230a PNA-L </h5>
+                                <img class="alignleft" width="300" src="/static/images/mw2.png" alt="">
+                                <p>The Agilent N5230A Network Analyzer provides a superior combination of speed and
+                                    accuracy for measuring multi-port and balanced components such as filters, duplexers
+                                    and RF modules up to 50 GHz (option dependent). The Agilent N5230A analyzer's
+                                    automatic port extension feature automatically measures and corrects for fixtures,
+                                    making measurements of in-fixture devices simple and accurate. The configurable test
+                                    set (optional) provides access to the signal path between the internal source and
+                                    the analyzer's test ports. This option provides the capability to improve instrument
+                                    sensitivity for measuring low level signals, to reverse the directional coupler to
+                                    achieve even more dynamic range or to add components or other peripheral instruments
+                                    for a variety of applications such as high-power measurements. The extended power
+                                    range (optional) adds a 60 dB step attenuator internally to the RF source path. The
+                                    attenuator extends the source output power range to over 80 dB, allowing for maximum
+                                    flexibility when stimulating the device under test.
+                                </p>
+
+                                <div class="dlab-divider bg-gray-dark"></div>
+                                <h5> Vertical Single generator E4438ESG(Agilent tech.) </h5>
+                                <img class="alignleft" width="300" src="/static/images/mw3.png" alt="">
+                                <p>With the advent of digital communications systems, it is no longer possible to
+                                    adequately test these systems with traditional analog signal generators. This has
+                                    led to the development of the vector signal generator, which is also known as a
+                                    digital signal generator. These signal generators are capable of generating
+                                    digitally-modulated radio signals that may use any of a large number of digital
+                                    modulation formats such as QAM, QPSK, FSK, BPSK, and OFDM. In addition, since modern
+                                    commercial digital communication systems are almost all based on well-defined
+                                    industry standards, many vector signal generators can generate signals based on
+                                    these standards. Examples include GSM, W-CDMA (UMTS), CDMA2000, LTE, Wi-Fi (IEEE
+                                    802.11), and WiMAX (IEEE 802.16). In contrast, military communication systems such
+                                    as JTRS, which place a great deal of importance on robustness and information
+                                    security, typically use very proprietary methods. To test these types of
+                                    communication systems, users will often create their own custom waveforms and
+                                    download them into the vector signal generator to create the desired test signal.
+                                </p>
+                                <div class="dlab-divider bg-gray-dark"></div>
+
+                                <h5> PCB phototyping machine </h5>
+                                <img class="alignleft" width="300" src="/static/images/mw4.png" alt="">
+                                <p>This is an environment friendly PCB Machine for each stage of PCB making and
+                                    fabrication process, from design verification to structuring and board assembly.
+                                    Users can produce fully functioning boards quickly and easily by drilling, engraving
+                                    and routing. Auto tool change allows up to 12 tools that are automatically changed
+                                    as required during production. This reduces set-up times and permits unattended
+                                    production.
+                                </p>
+                                <ul>
+                                    <h5>Benefits</h5>
+                                    <li>Engrave Tool for engraving trace and pad</li>
+                                    <li>End-mill Tool for copper removing</li>
+                                    <li>Drill bit for drilling holes</li>
+                                    <li>Router Bit for PCB outline cutting</li>
+                                    <li>No pollution / environmental friendly</li>
+                                    <li>Working area : 320mm X 230mm</li>
+                                </ul>
+
+                                <div class="dlab-divider bg-gray-dark"></div>
+
+
+                                <h5>• IE3D Electromagnetic Simmulation software </h5>
+                                <img class="alignleft" width="300" src="/static/images/mw5.png" alt="">
+                                <p>IE3D is the first SCALABLE EM design and verification platform that delivers the
+                                    modeling accuracy for the combined needs of high-frequency circuit design and signal
+                                    integrity engineers across multiple design domains. For many companies, there is no
+                                    longer just one EM problem at hand, but several different ones each presenting a
+                                    unique bottleneck and delaying overall design closure. IE3D's multi-threaded and
+                                    distributed simulation architecture and high-design capacity is the most
+                                    cost-effective EM simulation and modeling solution for component-level and
+                                    circuit-level applications. IE3D offers the highest simulation capacities and
+                                    fastest turnaround times for the broadest number of applications making it the best
+                                    choice for improving your design team productivity and meeting design schedules on
+                                    time.
+                                </p>
+                                <ul>
+                                    <h5>USES</h5>
+                                    <li>Antenna Design</li>
+                                    <p>Today's high performance antenna array design requires both, large capacity EM
+                                        simulation and unit array cell EM design and optimization capabilities. Getting
+                                        the array unit cell right from the start is essential before replicating into a
+                                        larger antenna array structure.
+                                        IE3D-SSD offers FASTEM to thoroughly explore the relevant design space and
+                                        optimize the geometry for each unique unit cell. In addition, IE3D-SSD's
+                                        superior capacity and run-time enable even the largest antenna arrays to be
+                                        solved in least amount of time. IE3D-SSD is the best solution for your antenna
+                                        design.</p>
+                                    <li>RFID Design</li>
+                                    <p>RFID design and EM modeling is a strength of IE3D-SSD where combining both
+                                        disciplines of antenna and embedded passive design are best addressed. Critical
+                                        geometries and dielectric impact on overall tag performance can be easily
+                                        isolated and optimized accelerating design closure and improving the overall
+                                        quality of the design.</p>
+                                    <li>MMIC Design</li>
+                                    <p>Today's MMIC designer now require "circuit-level" EM simulation and modeling to
+                                        support the accuracy and throughput demands to meet aggressive project schedule
+                                        deadlines. The days of using flat planar 3D EM simulations solutions for MMIC
+                                        design are over. Now full 3D geometry modeling of bond wires, via structures,
+                                        and other 3D structures are a must-have for designers pushing performance.
+                                        Circuit-level EM simulation captures the true electrical behavior of a designs
+                                        passive structures including coupling. IE3D-SSD is the perfect fit for MMIC
+                                        designers requiring full 3D geometry modeling and high simulation capacities.
+                                    </p>
+                                    <li>IC Package Modeling</li>
+                                    <p>Increasing operating frequencies and the rapid move to multi-chip system
+                                        architectures have sparking a new parasitic extraction paradigm shift for IC
+                                        packaging that now requires the accuracy of full 3D EM simulation and modeling.
+                                        Package models built upon simplistic 2D approximations can no longer be relied
+                                        upon to secure successful design closure. IE3D-SI is the perfect answer for the
+                                        circuit design and signal integrity engineer delivering the fastest throughput
+                                        and capacity of any true 3D EM simulation commercially available. IE3D-SI
+                                        delivers the most accurate models of packages housing stacked die, multiple die,
+                                        and embedded passives with multi-height bond wires, solder balls, bumps, vias,
+                                        and through silicon vias.</p>
+
+                                </ul>
+                                <div class="dlab-divider bg-gray-dark"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Content END-->
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="p-tb60 text-center bg-black ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="font-weight-300">MINOR PROJECT</h3>
+                            <div class="dlab-separator bg-white"></div>
+                            <p class="max-w600 m-auto">DEVELOPED BY PRAVEEN KUMAR, PARTH, NITESH KUMAR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer END -->
+
+        <!-- scroll top button -->
+        <button class="scroltop fa fa-chevron-up"></button>
+    </div>
+    <!-- JAVASCRIPT FILES ========================================= -->
+    <script src="{%static 'js/jquery.min.js'%}"></script>
+    <!-- JQUERY.MIN JS -->
+    <script src="{%static 'plugins/wow/wow.js'%}"></script>
+    <!-- WOW JS -->
+    <script src="{%static 'plugins/bootstrap/js/popper.min.js'%}"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+    <script src="{%static 'plugins/bootstrap/js/bootstrap.min.js'%}"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+    <script src="{%static 'plugins/bootstrap-select/bootstrap-select.min.js'%}"></script>
+    <!-- FORM JS -->
+    <script src="{%static 'plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js'%}"></script>
+    <!-- FORM JS -->
+    <script src="{%static 'plugins/magnific-popup/magnific-popup.js'%}"></script>
+    <!-- MAGNIFIC POPUP JS -->
+    <script src="{%static 'plugins/counter/waypoints-min.js'%}"></script>
+    <!-- WAYPOINTS JS -->
+    <script src="{%static 'plugins/counter/counterup.min.js'%}"></script>
+    <!-- COUNTERUP JS -->
+    <script src="{%static 'plugins/imagesloaded/imagesloaded.js' %}"></script>
+    <!-- IMAGESLOADED -->
+    <script src="{%static 'plugins/masonry/masonry-3.1.4.js' %}"></script>
+    <!-- MASONRY -->
+    <script src="{%static 'plugins/masonry/masonry.filter.js' %}"></script>
+    <!-- MASONRY -->
+    <script src="{%static 'plugins/owl-carousel/owl.carousel.js' %}"></script>
+    <!-- OWL SLIDER -->
+    <script src="{%static 'plugins/lightgallery/js/lightgallery-all.min.js' %}"></script>
+    <!-- Lightgallery -->
+    <script src="{%static 'js/custom.js' %}"></script>
+    <!-- CUSTOM FUCTIONS  -->
+    <script src="{%static 'js/dz.carousel.min.js' %}"></script>
+    <!-- SORTCODE FUCTIONS  -->
+    <script src="{%static 'plugins/countdown/jquery.countdown.js' %}"></script>
+    <!-- COUNTDOWN FUCTIONS  -->
+    <script src="{%static 'js/dz.ajax.js' %}"></script>
+    <!-- CONTACT JS  -->
+    <script src="{%static 'plugins/rangeslider/rangeslider.js' %}"></script>
+    <!-- Rangeslider -->
+
+    <script src="{%static 'js/jquery.lazy.min.js' %}"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script src="{%static 'plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{%static 'plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js' %}">
+    </script>
+    <script src="{%static 'plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+    <script src="{%static 'js/rev.slider.js' %}"></script>
+    <script src="{%static 'js/jquery.star-rating-svg.js' %}"></script>
+
+    <script>
+        jQuery(document).ready(function () {
+            'use strict';
+            dz_rev_slider_5();
+            $('.lazy').Lazy();
+        }); /*ready*/
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            var sync1 = $("#sync1");
+            var sync2 = $("#sync2");
+            var slidesPerPage = 4; //globaly define number of elements per page
+            var syncedSecondary = true;
+
+            sync1.owlCarousel({
+                items: 1,
+                slideSpeed: 2000,
+                nav: true,
+                autoplay: false,
+                dots: false,
+                loop: true,
+                responsiveRefreshRate: 200,
+                navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+            }).on('changed.owl.carousel', syncPosition);
+
+            sync2.on('initialized.owl.carousel', function () {
+                sync2.find(".owl-item").eq(0).addClass("current");
+            }).owlCarousel({
+                items: slidesPerPage,
+                dots: false,
+                nav: false,
+                margin: 5,
+                smartSpeed: 200,
+                slideSpeed: 500,
+                slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+                responsiveRefreshRate: 100
+            }).on('changed.owl.carousel', syncPosition2);
+
+            function syncPosition(el) {
+                //if you set loop to false, you have to restore this next line
+                //var current = el.item.index;
+
+                //if you disable loop you have to comment this block
+                var count = el.item.count - 1;
+                var current = Math.round(el.item.index - (el.item.count / 2) - .5);
+
+                if (current < 0) {
+                    current = count;
+                }
+                if (current > count) {
+                    current = 0;
+                }
+
+                //end block
+
+                sync2
+                    .find(".owl-item")
+                    .removeClass("current")
+                    .eq(current)
+                    .addClass("current");
+                var onscreen = sync2.find('.owl-item.active').length - 1;
+                var start = sync2.find('.owl-item.active').first().index();
+                var end = sync2.find('.owl-item.active').last().index();
+
+                if (current > end) {
+                    sync2.data('owl.carousel').to(current, 100, true);
+                }
+                if (current < start) {
+                    sync2.data('owl.carousel').to(current - onscreen, 100, true);
+                }
+            }
+
+            function syncPosition2(el) {
+                if (syncedSecondary) {
+                    var number = el.item.index;
+                    sync1.data('owl.carousel').to(number, 100, true);
+                }
+            }
+
+            sync2.on("click", ".owl-item", function (e) {
+                e.preventDefault();
+                var number = $(this).index();
+                //sync1.data('owl.carousel').to(number, 300, true);
+
+                sync1.data('owl.carousel').to(number, 300, true);
+
+            });
+
+            document.getElementsByClassName("owl-prev")[0].style.display = "none";
+            document.getElementsByClassName("owl-next")[0].style.display = "none";
+        });
+    </script>
+
+
+    {% block script %} {% endblock %}
+</body>
+
+</html>
